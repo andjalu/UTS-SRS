@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tebak Lagu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scoreboard">Poin: <span id="poin">0</span></div>
+
+  <div class="kontainer">
+    <h1>🎵 Tebak Lagu Dari Lirik 🎵</h1>
+  <p>Klik tombol di bawah, dengarkan liriknya, lalu sebutkan judul lagunya!</p>
+    <div id="lirik" class="lirik-box">Lirik akan muncul di sini</div>
+
+    <div class="tombol-area">
+      <button onclick="bacaLirik()">🔊 Bacakan Lirik</button>
+      <button onclick="mulaiRekognisi()">🎤 Jawab</button>
+    </div>
+
+    <table class="tabel-jawaban">
+      <tr>
+        <th>Jawaban Anda</th>
+        <th>Jawaban Benar</th>
+      </tr>
+      <tr>
+        <td id="jawaban"></td>
+        <td id="kunci-jawaban"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="popup" class="popup">
+    <div class="popup-content" id="popup-content">
+      <span id="popup-close" class="popup-close">&times;</span>
+      <p id="popup-message"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="background.js"></script>
+</body>
+</html>
